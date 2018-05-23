@@ -24,6 +24,9 @@ module.exports = {
    "rules": {
      "react/jsx-filename-extension": 0,
      "function-paren-newline": 0,
-     "react/prefer-stateless-function": 0
+     "react/prefer-stateless-function": 0,
+     "linebreak-style": 0,
+     "global-require": 0,
+    "jsx-a11y/anchor-is-valid": 0,
    }
  };
