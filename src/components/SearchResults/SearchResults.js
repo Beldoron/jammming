@@ -6,7 +6,8 @@ import TrackList from '../TrackList/TrackList';
 
 const SearchResults = props => (
   <div className="SearchResults">
-    <TrackList tracks={props.searchResults} />
+    <h2>Results</h2>
+    <TrackList onAdd={props.onAdd} isRemoval={false} tracks={props.searchResults} />
   </div>
 );
 
