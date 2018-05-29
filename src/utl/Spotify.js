@@ -1,6 +1,7 @@
 /* eslint consistent-return: 0 */
 const clientId = '4f009b14b2fe4e169a1da8d9dd00b930';
-const redirectUri = 'http://localhost:3000/';
+// const redirectUri = 'http://localhost:3000/';
+const redirectUri = 'http://michas_jammming.surge.sh';
 const spotifyUrl = `https://accounts.spotify.com/authorize?client_id=${clientId}&response_type=token&scope=playlist-modify-public&redirect_uri=${redirectUri}`;
 let accessToken;
 let expiresIn;
