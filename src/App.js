@@ -14,15 +14,7 @@ class App extends Component {
  state = {
    searchResults: [],
    playlistName: 'New Playlist',
-   playlistTracks: [
-     {
-       key: 2,
-       name: 'Bob',
-       artist: 'lost',
-       album: 'semi',
-       URI: 'spotify:track:4iV5W9uYEdYUVa79Axb7Rh',
-     },
-   ],
+   playlistTracks: [],
  };
 
  addTrack = (track) => {

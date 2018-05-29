@@ -1,7 +1,7 @@
 /* eslint consistent-return: 0 */
 const clientId = '4f009b14b2fe4e169a1da8d9dd00b930';
 // const redirectUri = 'http://localhost:3000/';
-const redirectUri = 'http://michas_jammming.surge.sh';
+const redirectUri = 'http://mundane-sister.surge.sh';
 const spotifyUrl = `https://accounts.spotify.com/authorize?client_id=${clientId}&response_type=token&scope=playlist-modify-public&redirect_uri=${redirectUri}`;
 let accessToken;
 let expiresIn;
@@ -26,7 +26,6 @@ const Spotify = {
     }
     window.location = spotifyUrl;
     console.log('Realod ###########################################');
-    // this.GetAccessToken();
   },
 
 
@@ -43,7 +42,7 @@ const Spotify = {
         return jsonResponse.tracks.items.map(
           track => (
             {
-              key: track.id, // KEY or ID????
+              key: track.id,
               name: track.name,
               artist: track.artists[0].name,
               album: track.album.name,
