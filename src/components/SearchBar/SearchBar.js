@@ -15,7 +15,7 @@ export default class SearchBar extends Component {
     const keyPressed = event.keyCode || event.which;
     const getKeyPressed = event.key;
     if (keyPressed === 13 || getKeyPressed === 'Enter') {
-      this.props.onSearch(this.state.searchTerm); // Put If stuff here
+      this.props.onSearch(this.state.searchTerm); 
     }
   };
 
